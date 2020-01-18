@@ -1,0 +1,134 @@
+*{
+    font-family: "Noto Sans JP", sans-serif;
+    border:solid 1px gray;
+    margin:0;
+}
+
+
+header{
+
+    
+}
+
+.header-top{
+    position: relative;
+    width: auto;
+    min-height: 1800px;
+    background-image: url("../img/flower01.jpg");
+    background-size: cover;
+    padding:0;
+}
+
+.header-top h1{
+position: absolute;
+font-size: 55px;
+color: white;
+top: 25%;
+left:45%;
+}
+.header-top p{
+    position: absolute;
+    color: white;
+    bottom: 10%;
+    left:50%;   
+    text-align: center;
+}
+
+#back-img{
+    width: auto;
+}
+#logo-img{
+    position: absolute; 
+    top: 10%;
+    left:50%;
+    max-width: 100%;
+}
+
+#appstore-img{
+    position: absolute; 
+    top: 30%;
+    left:45%;
+}
+
+
+
+
+header .info{
+font-size: 8px;
+padding-top:70px;
+}
+
+.concept {
+    color: white;
+    width: auto;
+    
+    height: 2800px;
+    background-image: url("../img/flower02.jpg");
+    background-size: cover;
+}
+
+.concept02 {
+    color: white;
+    width: auto;
+    height: 2800px;
+    background-image: url("../img/flower03.jpg");
+    background-size: cover;
+}
+.concept03 {
+    color: white;
+    width: auto;
+    height: 2800px;
+    background-image: url("../img/flower04.jpg");
+    background-size: cover;
+}
+.concept04 {
+    color: white;
+    width: 2400px;
+    height: 1800px;
+    background-image: url("../img/flower05.jpg");
+    background-size: cover;
+}
+.concept05 {
+    color: white;
+    width: 2400px;
+    height: 1800px;
+    background-image: url("../img/flower06.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+li{
+    list-style: none;
+    width: 300px;
+    height: 600px;
+    float:left;
+
+}
+
+#oneflower{
+    background-image: url("../img/one.png");
+    background-size: cover;
+}
+#bouquet{
+    background-image: url("../img/bouquet.png");
+    background-size: cover;
+}
+    
+
+
+footer{
+background-color: #3f434a;
+color: whitesmoke;
+
+    }
+
+    .footer-list{
+
+        margin-left:50px;
+    }
+
+    footer ul{
+        list-style: none;
+    }
+        
+   

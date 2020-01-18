@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>新年の占い</title>
+  <meta charset="UTF-8">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>HAPPY NEW YEAR 2020!</h1>
+    
+<div class="fortune">
+    <h2>今年のあなたの運勢は？</h2>
+    <input type="button" id ="button" value="占う" onclick="getFortuneResult()">
+    
+    <p id="uranai_result">どんな1年になるかな♪</p>
+    
+<div class="achievement">
+<h2>新年の抱負を書こう！</h2>
+<p id="note">あと100文字書けるよ！</p>
+<input id="inputbox" type="textbox" style="width: 300px;">
+
+<input type="button" id="inputend" value="書けた！" onclick="cheer()">
+
+</div>
+</div>
+<script>
+'use strict';
+
+        
+    //占い
+    function getFortuneResult(){
+        var results=["大吉","小吉","吉"];
+
+    var result=Math.floor(Math.random()*results.length);
+    
+    var resultText=results[result];
+    
+    var btn_result=document.getElementById('button');
+    
+    btn_result.value=resultText;
+    
+    }
+    
+    //抱負のコーナー
+    var maxChars=100;
+    var textBox=document.getElementById("inputbox");
+    textBox.addEventListener('keydown',note);
+    
+    
+    function note(){
+        var note=document.getElementById("note");
+        var text="あと"+(maxChars-textBox.value.length)+"文字書けるよ";
+        //textの中身に設定している
+        note.textContent=text;
+    }
+    
+    function cheer(){
+ 
+    var cheerMessage=document.createElement("p");
+    var cheerPicture=document.createElement("img");
+
+    var message="FIGHT ～～～～！";
+    var cheerpic=cheerPicture.setAttribute("src","img/cheer.jpg");
+   
+    var outputMessage=document.createTextNode(message);
+   
+    document.body.appendChild(cheerPicture).appendChild(outputMessage);
+    document.body.appendChild(cheerMessage).appendChild(outputMessage);
+    
+    }
+       
+    </script>
+
+
+</body>
+</html>

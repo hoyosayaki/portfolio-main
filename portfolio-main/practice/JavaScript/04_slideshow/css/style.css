@@ -1,0 +1,170 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: red;
+}
+.image{
+    max-width:100%;
+    /* max-width: 1200px; */
+    /* height: auto; */
+    height: 600px;
+    background-color:gray;
+    background-image: url('../img/season01.jpg');
+    background-size: cover;
+ margin-bottom:8px;
+
+}
+
+
+
+nav{
+margin-bottom:8px;
+}
+nav ul{
+    display:flex;
+    /* justify-content: space-between; */
+}
+nav li{
+    border:1.5px solid rgb(236, 210, 210);
+    border-radius: 4px;
+    font-size:12px;
+    /* text-align: center; */
+    display: flex;
+justify-content: center;
+ align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav li:hover{
+    background:rgb(223, 216, 216);
+}
+
+#play{
+
+    width:140px;
+    height:30px;
+}
+#prev,#next{
+width:60px;
+height:30px;
+}
+
+ul{
+list-style: none;
+padding:2.5px;
+margin:0;
+}
+
+img{
+    vertical-align:bottom;
+}
+
+.thumbnails{
+   
+    display:grid;
+    grid-template-columns: repeat(6,120px);
+    gap:5px;
+}
+
+.thumbnails li{
+    cursor: pointer;
+    opacity:0.6;
+}
+.thumbnails li:hover,
+.thumbnails li.current{
+    opacity:1;
+}
+
+/* .thum-image{
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+} */
+
+#image01{
+    background-image: url('../img/season01.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image02{
+    background-image: url('../img/season02.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image03{
+    background-image: url('../img/season03.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image04{
+    background-image: url('../img/season04.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image05{
+    background-image: url('../img/season05.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image06{
+    background-image: url('../img/season06.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image07{
+    background-image: url('../img/season07.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image08{
+    background-image: url('../img/season08.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image09{
+    background-image: url('../img/season09.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image10{
+    background-image: url('../img/season10.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image11{
+    background-image: url('../img/season11.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}
+#image12{
+    background-image: url('../img/season12.jpg');
+    border :solid salmon 1px;
+    width: 110px; 
+    height:100px;
+    background-size:cover;
+}

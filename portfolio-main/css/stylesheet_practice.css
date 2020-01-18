@@ -1,0 +1,12 @@
+*{
+    margin:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:solid 1px gray;
+}  
+
+.header{    
+float: left;
+}
+.total{
+    display: flex;
+}

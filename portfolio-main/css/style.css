@@ -1,0 +1,33 @@
+*{
+    border :1px solid gray;
+}
+
+main{
+    width:300px;
+    margin:0 auto;
+}
+
+ul{
+    list-style: none;
+padding:0;
+margin:0;
+}
+
+img{
+    vertical-align:bottom;
+}
+
+#main {
+    width:100px;
+    height: 200px;
+}
+
+nav li{
+    border:1px gray;
+}
+
+.thumbnails img{
+    widows: 56px; 
+
+
+}

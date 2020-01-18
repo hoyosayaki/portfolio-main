@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>スロットゲーム</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+    <h1>SLOT GAME</h1>
+    <p>遊び方：３つのスロットを同じ数で止めてね。</p>
+    <p>あと<span id="playtimes">5</span>回チャレンジできるよ！</p>
+    <p>現在のスコア：<span id="score">0</span></p>
+<div class="slot">    
+<p id="slot0">0</p>
+<input type="button" value="STOP" id="stop0"  onclick="stopSlot(0)"></div>
+
+<div class="slot">    
+    <p id="slot1">0</p>
+    <input type="button" value="STOP" id="stop1"  onclick="stopSlot(1)"></div>
+
+    <div class="slot">    
+        <p id="slot2">0</p>
+        <input type="button" value="STOP" id="stop2" onclick="stopSlot(2)"></div>
+        
+
+<script>
+ 'use strict';   
+var timers=[];
+var results=[];
+var stopCount=0;
+var score=0;
+var slotCount=0;
+var playtimes=5;
+
+//slot START
+startSlot();
+
+function startSlot(){
+    runSlot(0);
+    runSlot(1);
+    runSlot(2);
+}
+
+//run slot
+function runSlot(num){
+var slotValue=document.getElementById("slot"+num);
+
+if(slotValue.textContent<9){
+
+   slotValue.textContent ++;   
+
+}else{
+    slotValue.textContent=0;
+}
+timers[num]=setTimeout(function(){
+    runSlot(num);
+},200);
+
+}
+
+function stopSlot(num){
+    document.getElementById("slot"+num).disabled=true;
+    clearTimeout(timers[num]);
+    results[num]=document.getElementById("slot"+num).textContent;
+    
+    stopCount++;
+    if(stopCount%3==0){
+        checkResult();
+    }
+    
+}
+
+function checkResult(){ 
+    if(results[0]==results[1]&&results[0]==results[2]){
+        alert("やったね！得点GET！");
+        
+        score+=100;
+        updateScore();
+        startSlot();
+
+    }else{
+ alert("残念！！");
+}
+updatePlaytimes();
+slotCount++;
+       
+if(slotCount<5){
+    startSlot();
+
+}else{
+    alert("遊んでくれてありがとう！");
+
+    }
+}
+
+function updateScore(){
+document.getElementById("score").textContent=score;
+}
+
+function updatePlaytimes(){
+playtimes--;
+document.getElementById("playtimes").textContent=playtimes;
+ 
+}
+
+</script>
+
+</body>
+</html>
